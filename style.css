@@ -1,0 +1,225 @@
+/* BASIC */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-family: "M PLUS Rounded 1c", sans-serif; */
+  font-family: fixedsys;
+  line-height: 1.6;
+  color: #e4e4e4;
+  background-color: #414141;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #e4e4e4;
+  text-decoration: none;
+}
+/* Hero */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  pointer-events: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 0 30px;
+  background-color: #111;
+  opacity: 0.7;
+  z-index: 10;
+}
+
+.navbar a {
+  padding: 10px 35px;
+}
+
+.navbar a:hover {
+  color: #ca3e47;
+  font-size: 41px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar li {
+  font-size: 40px;
+}
+
+.text-container {
+  position: relative;
+  z-index: 1;
+  margin: 0 700px 300px 0;
+}
+
+.text-container h1 {
+  font-size: 100px;
+}
+
+.text-container h3 {
+  font-size: 30px;
+  text-align: end;
+  padding: 20px 0;
+}
+
+.text-container h2 {
+  font-size: 55px;
+  text-align: end;
+}
+
+/* Profile */
+#about {
+  padding: 80px 30px 12px;
+}
+
+.about-container {
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about-box-1 {
+  /* background-color: green; */
+  padding: 20px 50px;
+  border-right: 2px solid #ca3e47;
+}
+
+.about-box-1 img {
+  height: 400px;
+  width: 350px;
+  border-radius: 20px;
+}
+
+.about-box-2 {
+  /* background-color: darkgrey; */
+  padding: 45px 30px;
+}
+
+.about-box-2 h1 {
+  font-size: 32px;
+  line-height: 4rem;
+  padding: 0px 30px;
+}
+
+.about-box-2 p {
+  font-size: 18px;
+  line-height: 2rem;
+  padding: 20px 40px;
+  text-align: justify;
+}
+
+.about-box-2 h3 {
+  line-height: 3rem;
+  text-align: center;
+  font-size: 22px;
+}
+
+.about-box-2 ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 10px;
+}
+
+.about-box-2 li {
+  background-color: #ca3e47;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
+.about-box-2 h1,
+.about-box-2 h3 {
+  /* background-color: black; */
+}
+.about-box-2 p {
+  /* background-color: darkslategrey; */
+}
+.about-box-2 ul {
+  /* background-color: darkslateblue; */
+}
+/* Hobbies  */
+
+#hobbies .hobbies-container h2 {
+  text-align: center;
+  padding: 30px 0px;
+  font-size: 32px;
+}
+
+#hobbies .hob-boxes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  text-align: center;
+  padding: 15px 10px;
+  min-width: 220px;
+  max-height: 400px;
+}
+
+.box img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.box-1 img {
+  width: 135px;
+}
+
+.box h3 {
+  padding: 10px;
+  font-size: 22px;
+}
+
+.box p {
+  text-align: center;
+  line-height: 2rem;
+  font-size: 18px;
+  padding: 10px 20px;
+}

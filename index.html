@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/html-css-project/css/style.css" />
+    <link rel="stylesheet" href="/html-css-project/css/utilities.css" />
+    <link rel="stylesheet" href="/html-css-project/css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/fixedsys-css/css/fixedsys.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kairê Montenegro - Animator</title>
+  </head>
+  <body id="home">
+    <header id="hero" class="hero">
+      <img src="https://i.ibb.co/tb9C1jc/Sky.png" id="sky" />
+      <img src="https://i.ibb.co/2Ym7ffR/last-Moutain.png" id="last" />
+      <img src="https://i.ibb.co/LvDfqs9/third-Mountain.png" id="middle" />
+      <img src="https://i.ibb.co/cF2nJwT/second-Mountain.png" id="first" />
+      <img src="https://i.ibb.co/92YM4xq/foreground.png" id="foreground" />
+      <div id="navbar" class="navbar">
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li>|</li>
+            <li><a href="#about">About</a></li>
+            <li>|</li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="text-container">
+        <h1 id="name"><span class="text-secondary">KAIRÊ </span>MONTENEGRO</h1>
+        <h3>Tokyo <span class="text-secondary"> based</span></h3>
+        <h2 id="ocupation"><span class="text-secondary">3D</span> ANIMATOR</h2>
+      </div>
+      <script type="text/javascript">
+        let last = document.getElementById("last");
+        let middle = document.getElementById("middle");
+        let first = document.getElementById("first");
+        let text = document.getElementById("text-container");
+
+        window.addEventListener("scroll", function () {
+          var value = window.scrollY;
+
+          last.style.top = value * 0.2 + "px";
+          middle.style.top = value * 0.1 + "px";
+          first.style.top = value * 0.05 + "px";
+          text.style.top = value * 1 + "px";
+        });
+      </script>
+    </header>
+    <section id="about" class="bg-secondary">
+      <div class="about-container bg-primary">
+        <div class="about-box-1 about-box">
+          <img
+            src="https://i.ibb.co/cvBpyZN/Profile3.jpg"
+            alt=""
+            class="profile-picture"
+          />
+        </div>
+        <div class="about-box-2 about-box">
+          <h1><span class="text-secondary">Intro</span>duction</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            minus nostrum dolore consectetur necessitatibus officiis cumque qui
+            temporibus cupiditate autem numquam voluptatum, provident tempore
+            pariatur natus corporis amet fuga sed? Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quia laudantium, aspernatur architecto
+            odit ab inventore odio reiciendis tempore eum! Fugiat incidunt non,
+            temporibus sapiente quo dolore deleniti a debitis obcaecati
+            accusantium cupiditate excepturi ipsum necessitatibus recusandae
+            maxime quisquam omnis inventore ducimus consequuntur totam ad saepe
+            officiis impedit. Alias, enim consectetur!
+          </p>
+          <h3>Some of my hobbies:</h3>
+          <ul>
+            <li class="profile-hobby">Jiu-Jitsu</li>
+            <li class="profile-hobby">Guitar</li>
+            <li class="profile-hobby">Games</li>
+            <li class="profile-hobby">Bouldering</li>
+            <li class="profile-hobby">Books</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="hobbies">
+      <div class="hobbies-container bg-secondary">
+        <h2 class="text-secondary">Some stuff that I am working on</h2>
+        <div class="hob-boxes">
+          <div class="box-1 box bg-primary">
+            <img
+              src="https://i.ibb.co/W5N1Pmn/584830fecef1014c0b5e4aa2.png"
+              alt=""
+              class="profile-favorite"
+            />
+            <h3 class="text-secondary">Raspberry PI</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
+              obcaecati?
+            </p>
+          </div>
+          <div class="box-2 box bg-secondary">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/207/207022.png"
+              alt=""
+              class="profile-favorite"
+            />
+            <h3 class="text-secondary">Animating</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
+              obcaecati?
+            </p>
+          </div>
+          <div class="box-3 box bg-primary">
+            <img
+              src="https://i.ibb.co/0mP5VVX/pngegg.png"
+              alt=""
+              class="profile-favorite"
+            />
+            <h3 class="text-secondary">Coding</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
+              obcaecati?
+            </p>
+          </div>
+          <div class="box-4 box bg-secondary">
+            <img
+              src="https://i.ibb.co/2F76SVC/pngwing-com.png"
+              alt=""
+              class="profile-favorite"
+            />
+            <h3 class="text-secondary">Reading</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit,
+              obcaecati?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

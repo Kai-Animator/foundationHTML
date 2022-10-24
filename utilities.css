@@ -1,0 +1,16 @@
+.bg-primary {
+  background-color: #313131;
+  /* color: #ffcaca; */
+}
+
+.bg-secondary {
+  background-color: #414141;
+}
+
+.text-primary {
+  color: #525252;
+}
+
+.text-secondary {
+  color: #ca3e47;
+}
