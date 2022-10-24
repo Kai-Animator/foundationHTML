@@ -72,6 +72,10 @@ a {
   transition: 0.5s ease-in;
 }
 
+.navbar.top {
+  background: transparent;
+}
+
 .navbar a {
   padding: 10px 35px;
 }
