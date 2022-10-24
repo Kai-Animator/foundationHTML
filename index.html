@@ -21,40 +21,7 @@
       rel="stylesheet"
     />
     <header id="hero" class="hero">
-      <script type="text/javascript">
-        let last = document.getElementById("last");
-        let middle = document.getElementById("middle");
-        let first = document.getElementById("first");
-        let text = document.getElementById("text-container");
-
-        window.addEventListener("scroll", function () {
-          var value = window.scrollY;
-
-          last.style.top = value * 0.2 + "px";
-          middle.style.top = value * 0.1 + "px";
-          first.style.top = value * 0.05 + "px";
-          text.style.top = value * 1 + "px";
-        });
-
-        const navbar = document.getElementById("navbar");
-        let scrolled = false;
-
-        window.onscroll = function () {
-          if (window.pageYOffset > 100) {
-            navbar.classList.remove("top");
-            if (!scrolled) {
-              navbar.style.transform = "translateY(-80px)";
-            }
-            setTimeout(function () {
-              navbar.style.transform = "translateY(0)";
-              scrolled = true;
-            }, 400);
-          } else {
-            navbar.classList.add("top");
-            scrolled = false;
-          }
-        };
-      </script>
+      
       <img src="https://i.ibb.co/CWvhr6F/sky.jpg" id="sky" />
       <img src="https://i.ibb.co/2Ym7ffR/last-Moutain.png" id="last" />
       <img src="https://i.ibb.co/LvDfqs9/third-Mountain.png" id="middle" />
@@ -166,5 +133,39 @@
         </div>
       </div>
     </section>
+<script type="text/javascript">
+        let last = document.getElementById("last");
+        let middle = document.getElementById("middle");
+        let first = document.getElementById("first");
+        let text = document.getElementById("text-container");
+
+        window.addEventListener("scroll", function () {
+          var value = window.scrollY;
+
+          last.style.top = value * 0.2 + "px";
+          middle.style.top = value * 0.1 + "px";
+          first.style.top = value * 0.05 + "px";
+          text.style.top = value * 1 + "px";
+        });
+
+        const navbar = document.getElementById("navbar");
+        let scrolled = false;
+
+        window.onscroll = function () {
+          if (window.pageYOffset > 100) {
+            navbar.classList.remove("top");
+            if (!scrolled) {
+              navbar.style.transform = "translateY(-80px)";
+            }
+            setTimeout(function () {
+              navbar.style.transform = "translateY(0)";
+              scrolled = true;
+            }, 400);
+          } else {
+            navbar.classList.add("top");
+            scrolled = false;
+          }
+        };
+      </script>
   </body>
 </html>
