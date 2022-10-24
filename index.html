@@ -57,15 +57,23 @@
           text.style.top = value * 1 + "px";
         });
 
-        let prevScrollpos = window.pageYOffset;
+        const navbar = document.getElementById("navbar");
+        let scrolled = false;
+
         window.onscroll = function () {
-          var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
+          if (window.pageYOffset > 200) {
+            navbar.classList.remove("top");
+            if (!scrolled) {
+              navbar.style.transform = "translateY(-80px)";
+            }
+            setTimeout(function () {
+              navbar.style.transform = "translateY(0)";
+              scrolled = true;
+            }, 800);
           } else {
-            document.getElementById("navbar").style.top = "-80px";
+            navbar.classList.add("top");
+            scrolled = false;
           }
-          prevScrollpos = currentScrollPos;
         };
       </script>
     </header>
