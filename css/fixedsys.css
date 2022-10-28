@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'fixedsys';
     src: url('https://kai-animator.github.io/foundationHTML/fonts/fsex300-webfont.eot');
-    src: url('../fonts/fsex300-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('https://kai-animator.github.io/foundationHTML/fonts/fsex300-webfont.eot?#iefix') format('embedded-opentype'),
     url('https://kai-animator.github.io/foundationHTML/fonts/fsex300-webfont.woff') format('woff'),
     url('https://kai-animator.github.io/foundationHTML/fonts/fsex300-webfont.ttf') format('truetype'),
     url('https://kai-animator.github.io/foundationHTML/fonts/fsex300-webfont.svg#fixedsys') format('svg');
